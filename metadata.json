@@ -1,0 +1,5 @@
+{
+  "name": "AngleForge — Multi-Angle Product Generator",
+  "description": "Generate 4–10 versions of a single product image from multiple angles (front, side, back, top, etc.) while preserving the product's design and identity. Ideal for e-commerce product showcases.",
+  "requestFramePermissions": []
+}
