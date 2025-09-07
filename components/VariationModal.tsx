@@ -105,7 +105,10 @@ export const VariationModal: React.FC<VariationModalProps> = ({ isOpen, onClose,
                         {!isLoading && resultImage && (
                             <div className="w-full h-full flex flex-col">
                                 <p className="text-sm font-medium text-gray-300 mb-2 text-center">Generated Scene</p>
-                                <img src={resultImage} alt="Generated variation" className="flex-grow rounded-lg w-full object-contain mb-4" />
+                                <div className="relative flex-grow w-full mb-4">
+                                    <img src={resultImage} alt="Generated variation" className="rounded-lg w-full h-full object-contain" />
+                                     <div className="absolute top-1.5 left-1.5 bg-black/50 text-white text-[10px] px-1.5 py-0.5 rounded-full font-mono select-none">AI</div>
+                                </div>
                                 <button
                                     onClick={handleDownload}
                                     className="w-full bg-green-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-green-500 transition-colors flex items-center justify-center gap-2"

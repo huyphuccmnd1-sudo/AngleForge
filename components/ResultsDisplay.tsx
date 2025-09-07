@@ -20,7 +20,10 @@ const ImageCard: React.FC<{
             onClick={onClick}
         >
             {image.src ? (
-                <img src={image.src} alt={image.name} className="w-full h-full object-contain" />
+                <>
+                    <img src={image.src} alt={image.name} className="w-full h-full object-contain" />
+                    <div className="absolute top-1.5 left-1.5 bg-black/50 text-white text-[10px] px-1.5 py-0.5 rounded-full font-mono select-none">AI</div>
+                </>
             ) : (
                 <div className="w-full h-full flex items-center justify-center animate-pulse">
                     <svg className="w-8 h-8 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -43,9 +46,12 @@ const PreviewPane: React.FC<{
         <div className="flex flex-col items-center justify-center h-full bg-gray-900/50 rounded-lg border border-gray-700 p-4">
             {selectedImage ? (
                 <div className="w-full h-full flex flex-col">
-                    <div className="flex-grow flex items-center justify-center">
+                    <div className="flex-grow flex items-center justify-center relative">
                      {selectedImage.src ? (
+                        <>
                           <img src={selectedImage.src} alt={selectedImage.name} className="max-w-full max-h-full object-contain" />
+                          <div className="absolute top-2 left-2 bg-black/50 text-white text-[10px] px-1.5 py-0.5 rounded-full font-mono select-none">AI</div>
+                        </>
                      ) : (
                         <div className="w-full h-full flex items-center justify-center">
                             <div className="w-16 h-16 border-4 border-t-indigo-500 border-gray-600 rounded-full animate-spin"></div>
