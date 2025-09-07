@@ -1,0 +1,22 @@
+AngleForge v1.0-submission
+
+Live demo (AI Studio): https://ai.studio/apps/drive/1z3NGriXA0Oqq6U6bKavAdXZGxOn3Ebb4
+Video (YouTube, Unlisted): <https://www.youtube.com/watch?v=3XASMwKcSYA>
+Repository: https://github.com/huyphuccmnd1-sudo/AngleForge
+Commit: <PASTE_COMMIT_SHA>
+
+Summary:
+- From one product photo, AngleForge generates 6–10 retail-ready views (front, 3/4, side, back, optional top).
+- Built with Gemini 2.5 Flash Image (Nano Banana) inside Google AI Studio.
+- Supports white / transparent / showroom backgrounds; transparent PNGs include subtle baked contact shadow.
+- Batch mode produces full view sets per SKU; Download All (.zip) supported.
+
+How to reproduce locally:
+1) git clone https://github.com/huyphuccmnd1-sudo/AngleForge
+2) npm install
+3) create .env.local with GEMINI_API_KEY=YOUR_API_KEY
+4) npm run dev
+
+Compliance & License:
+- Repo license: MIT. If selected as a winner, we agree to license the winning Submission & source code under CC BY 4.0 per contest rules.
+- No proprietary datasets or private code used. Outputs are labeled “AI-generated”.
